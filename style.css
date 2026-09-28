@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  /* background: radial-gradient(circle, rgba(0, 0, 255, 0.558) 30%, rgba(255, 166, 0, 0.849) 100%); */
+  background: #222;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 400px;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.list {
+  background-color: rgba(245, 222, 179, 0.56);
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo p.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.wrapper {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid rgb(252, 176, 69);
+  padding: 0.1rem;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px 10px;
+  background: rgba(0, 0, 255, 0.597);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input {
+  flex: 2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  outline: none;
+  background: rgba(252, 176, 69, 0.2);
+}
+
+input:focus {
+  border: 2px solid rgba(0, 0, 255, 0.5);
+}
